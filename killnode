@@ -1,0 +1,2 @@
+#!/bin/bash
+ps ux | awk '/node/ && !/awk/ {print $2}' | xargs kill -9
